@@ -1,0 +1,87 @@
+.social-list-wrap {
+  padding: 0 32px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-item {
+  margin-top: 16px;
+  width: 44px;
+  height: 44px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  transition: background-color var(--timing-function) var(--effect-duration),
+    fill var(--timing-function) var(--effect-duration);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: #ffffff;
+  }
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--timing-function) var(--effect-duration);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.social-icon {
+  fill: var(--font-color);
+}
+
+/* соцсети в Подвале */
+.social {
+  margin-top: 15px;
+  margin-left: 70px;
+}
+.label {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--font-color);
+}
