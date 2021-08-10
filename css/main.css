@@ -136,8 +136,8 @@ body {
   }
 }
 
-/*--Логотип сайту(Шапка сайту)--*/
-/*-----Логотип сайту для mobile-версії---*/
+/*--(Шапка сайту)--*/
+/*-----Логотип сайту для mobile----*/
 .logo, .footer-logo {
   font-family: var(--secondary-font);
   font-size: 24px;
@@ -145,10 +145,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #000000;
-}
-
-.logo {
-  animation-duration: 500ms;
 }
 
 .logo__item {
@@ -185,7 +181,7 @@ body {
   color: var(--accent-color);
 }
 
-/*-----Логотип сайту (Підвал) для desktop-версії---*/
+/*-----Логотип сайту (Подвал) для desktop----*/
 @media screen and (min-width: 1200px) {
   .footer-logo {
     text-align: start;
@@ -1082,11 +1078,6 @@ body {
   }
 }
 
-/*-------- Початок сторінки сайту "Портфоліо"--------*/
-/*--- Унікальний контент сторінки----*/
-/*--- Секція порфоліо---*/
-/*-- Список фільтрів --*/
-/*-----Сторінка Потфоліо для mobile-версії---*/
 .filter-list {
   display: flex;
   flex-wrap: wrap;

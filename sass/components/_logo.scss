@@ -1,6 +1,6 @@
 /*--(Шапка сайту)--*/
 /*-----Логотип сайту для mobile----*/
-.logo {
+%logo {
   font-family: var(--secondary-font);
   @include font(24px, 700, 1.17);
   letter-spacing: 0.03em;
@@ -8,10 +8,9 @@
   color: #000000;
 }
 
-// .logo {
-//   @extend %logo;
-//   animation-duration: 500ms;
-// }
+.logo {
+  @extend %logo;
+}
 
 .logo__item {
   color: var(--accent-color);
