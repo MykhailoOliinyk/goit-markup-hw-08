@@ -1,22 +1,56 @@
+/*--(Шапка сайту)--*/
+/*-----Логотип сайту для mobile----*/
 .logo {
-  margin-right: 93px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-family: var(--secondary-font);
+  @include font(24px, 700, 1.17);
   letter-spacing: 0.03em;
+
+  color: #000000;
+}
+
+// .logo {
+//   @extend %logo;
+//   animation-duration: 500ms;
+// }
+
+.logo__item {
   color: var(--accent-color);
 }
 
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-right: 0px;
-}
-.logo2 {
-  color: var(--font-color);
+/*-----Логотип сайту для tablet-версії---*/
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
 }
 
-.logo__studio {
-  color: #000000;
+/*-----Логотип сайту для desktpo-версії---*/
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    @include font(26px, 700, 1.2);
+  }
+}
+
+/*-- Логотип сайту (Підвал) --*/
+
+/*-----Логотип сайту (Підвал) для mobile-версії---*/
+.footer-logo {
+  @extend %logo;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--primary-white-color);
+
+  & .logo__item {
+    color: var(--accent-color);
+  }
+}
+/*-----Логотип сайту (Подвал) для desktop----*/
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    text-align: start;
+  }
 }

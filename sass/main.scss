@@ -1,29 +1,24 @@
-// UTILS
 @import './utils/variables';
-@import './utils/visually-hidden';
 @import './utils/mixin';
-//BASE
-
 @import './base/common';
-@import './base/conteiner';
-
-//COMPONENTS
-@import './components/modal-button';
-@import './components/social-list';
+@import './base/container';
+@import './utils/visually-hidden';
+@import './components/title';
+@import './layout/header';
 @import './components/logo';
-@import './components/footer-forma';
-@import './components/filtr-portfolio';
+@import './components/navigation';
+@import './components/contacts-header';
+@import './base/burger-menu';
+@import './layout/hero';
+@import './components/button';
+@import './layout/features-works';
+@import './layout/presentation-work';
+@import './layout/team';
+@import './components/social-icons';
+@import './layout/clients';
+@import './layout/footer';
+@import './components/contacts-footer';
+@import './layout/portfolio';
 @import './components/backdrop';
 @import './components/modal-window';
 @import './components/modal-form';
-
-//LAYOUT
-
-@import './layout/header';
-@import './layout/heroi';
-@import './layout/features';
-@import './layout/about';
-@import './layout/command';
-@import './layout/clients';
-@import './layout/footer';
-@import './layout/portfolio';

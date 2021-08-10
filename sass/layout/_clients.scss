@@ -1,66 +1,64 @@
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+/*-----Секція"Постоянные клиенты"------*/
+
+/*-----Секція"Постоянные клиенты" для mobile-версії---*/
+
+.clients__title {
+  @include font(28px, 700, 1.179);
+  margin-bottom: 30px;
 }
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.title-color {
-  color: var(--title-text-color);
-}
-.section-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-.clients-list {
-  justify-content: space-between;
-}
-.grid-wrapper {
+
+.clients__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
-.clients-list-item {
-  width: 170px;
-  height: 92px;
-}
-.grid-item {
+
+.clients__item {
   margin-left: 30px;
   margin-top: 30px;
+
+  width: calc(100% / 2 - 30px);
+  height: 92px;
 }
-.clients-list-link {
+
+/*---Список іконок в секції"Постоянные клиенты"----*/
+
+.clients__link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
+  fill: #afb1b8;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: border var(--timing-function) var(--effect-duration),
-    fill var(--timing-function) var(--effect-duration);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    border: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
   }
 }
 
-.clients-list-icon {
-  width: 106px;
-  height: 60px;
-  fill: #afb1b8;
+/*-----Секція"Постоянные клиенты" для tablet-версії---*/
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc(100% / 3 - 30px);
+  }
+}
 
-  .clients-list-link:hover &,
-  .clients-list-link:focus & {
-    fill: var(--accent-color);
+/*-----Секція"Постоянные клиенты" для desktop-версії---*/
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    @include font(36px, 700, 1.17);
+    margin-bottom: 50px;
+  }
+  .clients__item {
+    width: calc(100% / 6 - 30px);
   }
 }
